@@ -2,13 +2,13 @@
   "version": 1,
   "rules": [
     {
-      "domain": []
+      "domain": [
+        "www.jianfast.com"
+      ]
     },
     {
       "domain_suffix": [
-        ".jianfast.com",
-        ".kuaishou.com",
-        ".douyinast.com"
+        ".jianfast.com"  
       ]
     },
     {
