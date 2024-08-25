@@ -4,13 +4,13 @@
   "rules": [
     {      
       "domain": [
-        "weixinsxy.com",
-        "jianfast.com",
+        "weixinsxy.com"，       
         "wxapp.tc.qq.com"
       ]
     },
     {
       "domain_suffix": [
+        ".jianfast.com",
         ".weixinsxy.com",
         ".wxapp.tc.qq.com"
       ]
