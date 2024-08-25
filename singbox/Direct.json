@@ -1,17 +1,16 @@
-
 {
   "version": 1,
   "rules": [
-    {      
+    {
       "domain": [
-        "weixinsxy.com"，       
+        "weixinsxy.com",
         "wxapp.tc.qq.com"
       ]
     },
     {
       "domain_suffix": [
-        ".jianfast.com",
         ".weixinsxy.com",
+        ".jianfast.com",
         ".wxapp.tc.qq.com"
       ]
     },
