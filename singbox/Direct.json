@@ -4,14 +4,14 @@
     {
       "domain": [
         "time.windows.com",
-        "jianfast.com",
-        "tiantianjiexi.com"       
+        "jianfast.com"    
       ]
     },
     {
       "domain_suffix": [
         ".time.windows.com",
-        ".jianfast.com"
+        ".jianfast.com",
+        "tiantianjiexi.com"
       ]
     },
     {
