@@ -3,20 +3,19 @@
   "rules": [
     {
       "domain": [
-        "weixinsxy.com",
-        "wxapp.tc.qq.com"
+        "time.windows.com",
+        "jianfast.com"
       ]
     },
     {
       "domain_suffix": [
-        ".weixinsxy.com",
-        ".wxapp.tc.qq.com"
+        ".time.windows.com",
+        ".jianfast.com"
       ]
     },
     {
       "domain_keyword": [
-        "cherrytv",
-        "cherr"
+        "jianfast"
       ]
     },
     {
@@ -27,3 +26,4 @@
     }
   ]
 }
+
