@@ -3,20 +3,17 @@
   "rules": [
     {
       "domain": [
-        "weixinsxy.com",
-        "wxapp.tc.qq.com"
+        "qichiyu.com"
       ]
     },
     {
       "domain_suffix": [
-        ".weixinsxy.com",
-        ".wxapp.tc.qq.com"
+        ".qichiyu.com"
       ]
     },
     {
       "domain_keyword": [
-        "cherrytv",
-        "cherr"
+        "1e100"
       ]
     },
     {
