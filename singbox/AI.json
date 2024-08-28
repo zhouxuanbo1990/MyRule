@@ -3,20 +3,60 @@
   "rules": [
     {
       "domain": [
-        "weixinsxy.com",
-        "wxapp.tc.qq.com"
+        "perplexity.ai",
+        "ciciai.com",
+        "coze.com",
+        "chatgpt.com",
+        "auth0.com",
+        "client-api.arkoselabs.com",
+        "events.statsigapi.net",
+        "featuregates.org",
+        "identrust.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "sentry.io",
+        "stripe.com",
+        "bard.google.com",
+        "gemini.google.com",
+        "makersuite.google.com",
+        "anthropic.com",
+        "claude.ai.com"
       ]
     },
     {
       "domain_suffix": [
-        ".weixinsxy.com",
-        ".wxapp.tc.qq.com"
+        ".perplexity.ai",
+        ".ciciai.com",
+        ".coze.com",
+        ".chatgpt.com",
+        ".auth0.com",
+        ".client-api.arkoselabs.com",
+        ".events.statsigapi.net",
+        ".featuregates.org",
+        ".identrust.com",
+        ".intercom.io",
+        ".intercomcdn.com",
+        ".oaistatic.com",
+        ".oaiusercontent.com",
+        ".sentry.io",
+        ".stripe.com",
+        ".bard.google.com",
+        ".gemini.google.com",
+        ".makersuite.google.com",
+        ".anthropic.com",
+        ".claude.ai.com"
       ]
     },
     {
       "domain_keyword": [
         "cherrytv",
-        "cherr"
+        "cherr",
+        "anthropic",
+        "Claude",
+        "ciciai",
+        "coze"
       ]
     },
     {
