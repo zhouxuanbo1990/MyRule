@@ -4,7 +4,6 @@ DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,Claude
 DOMAIN-KEYWORD,ciciai
-DOMAIN-KEYWORD,coze
 # 域名后缀匹配
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,ciciai.com
