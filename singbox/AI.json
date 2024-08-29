@@ -1,11 +1,19 @@
 {
   "version": 1,
-  "rules": [    
+  "rules": [
     {
-      "domain_suffix": [
+      "domain": [
         "ciciai.com",
         "coze.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".ciciai.com",
+        ".coze.com"
       ]
     }
   ]
 }
+
+
