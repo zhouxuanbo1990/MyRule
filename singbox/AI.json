@@ -3,14 +3,12 @@
   "rules": [
     {
       "domain": [
-        "ciciai.com",
-        "coze.com"
+        "ciciai.com"
       ]
     },
     {
       "domain_suffix": [
-        ".ciciai.com",
-        ".coze.com"
+        ".ciciai.com"
       ]
     }
   ]
