@@ -1,24 +1,9 @@
 {
   "version": 1,
-  "rules": [
-    {
-      "domain": [
-        "ciciai.com"
-      ]
-    },
+  "rules": [    
     {
       "domain_suffix": [
         ".ciciai.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "ciciai"
-      ]
-    },
-    {
-      "ip_cidr": [
-        "104.238.150.13/32"
       ]
     }
   ]
