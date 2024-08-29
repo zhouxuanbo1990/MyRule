@@ -1,14 +1,9 @@
 {
   "version": 1,
-  "rules": [
-    {
-      "domain": [
-        "ciciai.com"
-      ]
-    },
+  "rules": [   
     {
       "domain_suffix": [
-        ".ciciai.com"
+        "ciciai.com"
       ]
     }
   ]
