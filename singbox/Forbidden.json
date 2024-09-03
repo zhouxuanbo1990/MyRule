@@ -4,18 +4,27 @@
     {
       "domain": [
         "abchina.com",
-        "abchina.cn"
+        "abchina.cn",
+        "dyccb.net",
+        "hfbank.com",
+        "ccb.com"
       ]
     },
     {
       "domain_suffix": [
         "abchina.com",
-        "abchina.cn"
+        "abchina.cn",
+        "dyccb.net",
+        "hfbank.com",
+        "ccb.com"
       ]
     },
     {
       "domain_keyword": [
-        "abchina"
+        "abchina",
+        "dyccb",
+        "hfbank",
+        "ccb"
       ]
     }
   ]
