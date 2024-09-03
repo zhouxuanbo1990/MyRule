@@ -1,1 +1,18 @@
 
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "abchina.com",
+        "abchina.cn"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "abchina.com",
+        "abchina.cn"
+      ]
+    }
+  ]
+}
