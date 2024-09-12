@@ -11,12 +11,15 @@
       "domain_suffix": [
         "coze.cn",
         "jianfast.com",
-        "tiantianjiexi.com"
+        "tiantianjiexi.com",
+        "speech.microsoft.com",
+        "cognitive.microsoft.com",
+        "graph.microsoft.com"
       ]
     },
     {
       "domain_keyword": [
-        "speech"   
+        "speech"
       ]
     }
   ]
