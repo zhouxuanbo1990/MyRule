@@ -17,13 +17,15 @@
         "speech.microsoft.com",
         "cognitive.microsoft.com",
         "graph.microsoft.com",
-        "data.microsoft.com"
+        "data.microsoft.com",
+        "apple.com"
    
       ]
     },
     {
       "domain_keyword": [
-        "speech"
+        "speech",
+        "apple"
       ]
     }
   ]
