@@ -6,8 +6,7 @@
         "coze.cn",
         "time.windows.com",
         "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
-        "mobile.events.data.microsoft.com",
-        "bag.itunes.apple.com"
+        "mobile.events.data.microsoft.com"
       ]
     },
     {
@@ -18,15 +17,12 @@
         "speech.microsoft.com",
         "cognitive.microsoft.com",
         "graph.microsoft.com",
-        "data.microsoft.com",
-        "apple.com"
+        "data.microsoft.com"
       ]
     },
     {
       "domain_keyword": [
-        "speech",
-        "apple",
-        "itunes"
+        "speech"
       ]
     }
   ]
