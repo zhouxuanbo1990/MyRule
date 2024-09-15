@@ -4,9 +4,11 @@
     {
       "domain": [
         "coze.cn",
-        "time.windows.com",
+        "time.windows.com",       
         "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
-        "mobile.events.data.microsoft.com"
+        "mobile.events.data.microsoft.com",
+        "play.itunes.apple.com",
+        "courier.push.apple.com"
       ]
     },
     {
@@ -17,12 +19,15 @@
         "speech.microsoft.com",
         "cognitive.microsoft.com",
         "graph.microsoft.com",
-        "data.microsoft.com"
+        "data.microsoft.com",
+        "apple.com"
+   
       ]
     },
     {
       "domain_keyword": [
-        "speech"
+        "speech",
+        "apple"
       ]
     }
   ]
