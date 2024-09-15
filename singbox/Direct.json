@@ -15,7 +15,8 @@
         "speech.microsoft.com",
         "cognitive.microsoft.com",
         "graph.microsoft.com",
-        "events.data.microsoft.com"
+        "events.data.microsoft.com",
+        "edge.microsoft.com"
       ]
     },
     {
