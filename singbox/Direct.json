@@ -4,8 +4,8 @@
     {
       "domain": [
         "coze.cn",
-        "time.windows.com",
-        "edge.microsoft.com",
+        "time.windows.com",        
+        "edge.microsoft.com",        
         "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
         "mobile.events.data.microsoft.com"
       ]
@@ -19,7 +19,8 @@
         "cognitive.microsoft.com",
         "graph.microsoft.com",
         "data.microsoft.com",
-        "edge.microsoft.com"
+        "edge.microsoft.com",
+        "microsoft.com"
       ]
     },
     {
