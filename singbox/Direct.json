@@ -4,9 +4,10 @@
     {
       "domain": [
         "coze.cn",
-        "time.windows.com",       
+        "time.windows.com",
         "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
-        "mobile.events.data.microsoft.com"
+        "mobile.events.data.microsoft.com",
+        "bag.itunes.apple.com"
       ]
     },
     {
@@ -19,7 +20,6 @@
         "graph.microsoft.com",
         "data.microsoft.com",
         "apple.com"
-   
       ]
     },
     {
