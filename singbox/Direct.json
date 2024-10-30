@@ -3,17 +3,13 @@
   "rules": [
     {
       "domain": [
-        "coze.cn",
         "time.windows.com",       
         "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
-        "mobile.events.data.microsoft.com",
-        "play.itunes.apple.com",
-        "courier.push.apple.com"
+        "mobile.events.data.microsoft.com"      
       ]
     },
     {
       "domain_suffix": [
-        "coze.cn",
         "jianfast.com",
         "tiantianjiexi.com",
         "speech.microsoft.com",
