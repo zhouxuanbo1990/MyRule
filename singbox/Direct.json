@@ -3,9 +3,7 @@
   "rules": [
     {
       "domain": [
-        "time.windows.com",       
-        "prod-eastasia.access-point.cloudmessaging.edge.microsoft.com",
-        "mobile.events.data.microsoft.com"      
+        "time.windows.com"    
       ]
     },
     {
