@@ -3,13 +3,13 @@
   "rules": [
     {
       "domain": [
-        "time.windows.com"    
+        "time.windows.com"
       ]
     },
     {
       "domain_suffix": [
         "jianfast.com",
-        "tiantianjiexi.com" 
+        "tiantianjiexi.com"
       ]
     },
     {
