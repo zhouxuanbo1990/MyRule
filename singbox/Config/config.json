@@ -90,9 +90,13 @@
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
-      { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
+
+      { "rule_set": "my-direct", "outbound": "🎯 全球直连" },
+      { "rule_set": "my-proxy", "outbound": "🚀 节点选择" },
+
+      { "rule_set": ["geosite-chat","my-ai"], "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-tiktok", "outbound": "🎵 TikTok" },
-     
+           
       { "rule_set": "geosite-youtube", "outbound": "🚀 节点选择" }, 
       { "rule_set": "geosite-github", "outbound": "🚀 节点选择" },       
       { "rule_set": ["geoip-google", "geosite-google","geoip-telegram", "geosite-telegram"], "outbound": "🚀 节点选择" },
@@ -104,6 +108,10 @@
     ],
     
     "rule_set": [
+      { "tag": "my-direct", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/singbox/Direct.json", "download_detour": "🎯 全球直连" },
+      { "tag": "my-ai", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/singbox/AI.json", "download_detour": "🎯 全球直连" },
+      { "tag": "my-proxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/singbox/ProxyLite.json", "download_detour": "🎯 全球直连" },
+
       { "tag": "geosite-chat", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs", "download_detour": "🎯 全球直连" },
       { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs", "download_detour": "🎯 全球直连" },
