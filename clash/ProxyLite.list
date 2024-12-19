@@ -2,16 +2,9 @@
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
-DOMAIN-SUFFIX,metacubex.one
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
-DOMAIN-KEYWORD,netstar
-DOMAIN-KEYWORD,githubusercontent
-
-# IP段匹配
-IP-CIDR,142.171.133.131/32,no-resolve
-IP-CIDR,103.115.43.2/32,no-resolve
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
@@ -19,6 +12,7 @@ DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
 DOMAIN-SUFFIX,dot.sb
 DOMAIN-SUFFIX,dns.umbrella.com
 DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,dns.google
 DOMAIN-SUFFIX,cloudflare-dns.com
 DOMAIN-SUFFIX,doh.dns.sb
 DOMAIN-SUFFIX,doh.opendns.com
