@@ -32,8 +32,7 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
-  skip-domain:
-    - "Mijia Cloud"
+  skip-domain:    
     - "dlg.io.mi.com"
     - "+.push.apple.com"
     - "+.apple.com"
@@ -62,24 +61,19 @@ proxy-groups:
  
 rules:
   - RULE-SET,private_domain,🎯 全球直连
-
   - RULE-SET,my-direct,🎯 全球直连
   - RULE-SET,my-proxy,🚀 节点选择
   - RULE-SET,my-ai,🤖 ChatGPT  
-
   - RULE-SET,openai_domain,🤖 ChatGPT
   - RULE-SET,tiktok_domain,🎵 TikTok
   - RULE-SET,youtube_domain,🚀 节点选择
   - RULE-SET,google_domain,🚀 节点选择
   - RULE-SET,github_domain,🚀 节点选择
   - RULE-SET,telegram_domain,🚀 节点选择
-
   - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,apple_domain,🍏 Apple  
-  
+  - RULE-SET,apple_domain,🍏 Apple    
   - RULE-SET,geolocation-!cn,🚀 节点选择
-  - RULE-SET,cn_domain,🎯 全球直连
-  
+  - RULE-SET,cn_domain,🎯 全球直连  
   - RULE-SET,google_ip,🚀 节点选择,no-resolve
   - RULE-SET,telegram_ip,🚀 节点选择,no-resolve
   - RULE-SET,cn_ip,🎯 全球直连
@@ -92,11 +86,9 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs" }
-
   my-direct: { <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/Direct.list" }
   my-proxy: { <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/ProxyLite.list" }
-  my-ai: { <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/AI.list" }  
-  
+  my-ai: { <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/AI.list" }    
   openai_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs" }  
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs" }
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs" }
