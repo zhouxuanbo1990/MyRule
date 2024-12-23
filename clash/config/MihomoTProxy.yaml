@@ -7,7 +7,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-    url: "机场网址"
+    url: 机场网址
   Airport_02:
     type: http
     interval: 1800
@@ -16,7 +16,16 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-    url: "机场网址"
+    url: 机场网址
+  Airport_03:
+    type: http
+    interval: 1800
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 🎯 全球直连
+    url: 机场网址
 
 
 unified-delay: true
@@ -32,7 +41,8 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
-  skip-domain:    
+  skip-domain:  
+    - "Mijia Cloud"
     - "dlg.io.mi.com"
     - "+.push.apple.com"
     - "+.apple.com"
