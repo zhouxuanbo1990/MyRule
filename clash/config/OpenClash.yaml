@@ -8,7 +8,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-    url: "机场订阅"
+    url: 订阅地址
   Airport_02:
     type: http
     interval: 1800
@@ -17,7 +17,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-    url: "机场订阅"
+    url: 订阅地址
   Airport_03:
     type: http
     interval: 1800
@@ -26,7 +26,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-    url: "机场订阅"
+    url: 订阅地址
       
 # 用于下载订阅时指定UA
 global-ua: clash.meta
@@ -36,12 +36,11 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7894
+tproxy-port: 7895
 ipv6: false
 allow-lan: true
 unified-delay: true
 tcp-concurrent: true
-  
 geodata-mode: false
 geodata-loader: standard
 geo-auto-update: true
@@ -52,11 +51,6 @@ geox-url:
   mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
   asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
   
-# 控制面板
-external-controller: 0.0.0.0:9090
-secret: ""
-external-ui: ui
-external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
 
 # 匹配进程 always/strict/off
 find-process-mode: strict
@@ -116,25 +110,22 @@ dns:
     - "+.local"
     - geosite:private
     - geosite:cn
-  # 修改成自己的DNS
   default-nameserver:
+    - 211.137.191.26
     - 223.5.5.5
-    - 119.29.29.29
   proxy-server-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver-policy:
-    "rule-set:private_domain,cn_domain":
-    - 223.5.5.5
-    - 119.29.29.29
-    "rule-set:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
- 
-   
+    rule-set:private_domain,cn_domain:
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    rule-set:geolocation-!cn:
+      - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
 proxies:
 - name: "🎯 全球直连"
   type: direct
