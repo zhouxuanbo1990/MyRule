@@ -1,4 +1,4 @@
-# 机场订阅，名称不能重复
+#机场订阅
 proxy-providers:
   Airport_01:
     type: http
@@ -7,8 +7,8 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
-    url: 订阅地址
+    proxy: 🟢 直连
+    url: 机场订阅
   Airport_02:
     type: http
     interval: 1800
@@ -16,8 +16,8 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
-    url: 订阅地址
+    proxy: 🟢 直连
+    url: 机场订阅
   Airport_03:
     type: http
     interval: 1800
@@ -25,18 +25,14 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
-    url: 订阅地址
-      
-# 用于下载订阅时指定UA
-global-ua: clash.meta
-    
-# 全局配置
+    proxy: 🟢 直连
+    url: 机场订阅
+global-ua: clash.meta  
 port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7894
+tproxy-port: 7895
 ipv6: false
 allow-lan: true
 unified-delay: true
@@ -46,24 +42,19 @@ geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 48
 geox-url:
-  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
-  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
-  
-
-# 匹配进程 always/strict/off
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-idle: 600
 keep-alive-interval: 30
 
-# 策略组选择和fakeip缓存
 profile:
   store-selected: true
   store-fake-ip: true
-  
-# 流量嗅探
+
 sniffer:
   enable: true
   sniff:
@@ -81,31 +72,13 @@ sniffer:
     - 'dlg.io.mi.com'
     - "+.push.apple.com"
     - "+.apple.com"
-    
-# 代理模式
-tun:
-  enable: true
-  stack: mixed
-  mtu: 9000
-  dns-hijack:
-    - "any:53"
-    - "tcp://any:53"
-  auto-route: true
-  auto-redirect: true
-  auto-detect-interface: true
-  
-# DNS模块
-
 dns:
   enable: true
   listen: 0.0.0.0:1053
   ipv6: false
   respect-rules: true
-  # 模式切换 redir-host / fake-ip
   enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
-  # 模式切换 whitelist/blacklist 
-  # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "+.lan"
@@ -128,16 +101,17 @@ dns:
     rule-set:geolocation-!cn:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
+  
 proxies:
-- name: "🎯 全球直连"
+- name: "🟢 直连"
   type: direct
   udp: true
  
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇺🇲 美国自动, ♻️ 自动选择, 🐸 手动选择, 🎯 全球直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇺🇲 美国自动, ♻️ 自动选择, 🐸 手动选择, 🟢 直连]}
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇺🇲 美国自动, 🐸 手动选择, 🎯 全球直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇺🇲 美国自动, 🐸 手动选择, 🟢 直连]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🐸 手动选择, type: select, include-all: true, filter: "^((?!(直连)).)*$"}
   - {name: 🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(香港|港|🇭🇰|(?i)hk|(?i)hong))"}
@@ -146,14 +120,14 @@ proxy-groups:
   - {name: 🇺🇲 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美国|美|凤凰城|🇺🇲|(?i)us|(?i)states|(?i)america))"}
   - {name: 🤖 ChatGPT, type: select, proxies: [🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动]}
   - {name: 🎵 TikTok, type: select, proxies: [🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动]}
-  - {name: 🪟 Microsoft, type: select, proxies: [🇺🇲 美国自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🎯 全球直连]}
-  - {name: 🍏 Apple, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
-  - {name: 🐠 漏网之鱼, type: select, proxies: [🎯 全球直连, 🚀 节点选择]} 
+  - {name: 🪟 Microsoft, type: select, proxies: [🇺🇲 美国自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🟢 直连]}
+  - {name: 🍏 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: 🐠 漏网之鱼, type: select, proxies: [🟢 直连, 🚀 节点选择]} 
  
 
 rules:
-  - RULE-SET,private_domain,🎯 全球直连  
-  - RULE-SET,my-direct,🎯 全球直连
+  - RULE-SET,private_domain,🟢 直连
+  - RULE-SET,my-direct,🟢 直连
   - RULE-SET,my-proxy,🚀 节点选择
   - RULE-SET,my-ai,🤖 ChatGPT  
   - RULE-SET,openai_domain,🤖 ChatGPT
@@ -165,10 +139,10 @@ rules:
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,🍏 Apple    
   - RULE-SET,geolocation-!cn,🚀 节点选择
-  - RULE-SET,cn_domain,🎯 全球直连  
+  - RULE-SET,cn_domain,🟢 直连
   - RULE-SET,google_ip,🚀 节点选择,no-resolve
   - RULE-SET,telegram_ip,🚀 节点选择,no-resolve
-  - RULE-SET,cn_ip,🎯 全球直连
+  - RULE-SET,cn_ip,🟢 直连
   - MATCH,🐠 漏网之鱼
 
 rule-anchor:
