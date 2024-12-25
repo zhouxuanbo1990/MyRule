@@ -6,7 +6,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
+    proxy: 🟢 直连
     url: 机场网址
   Airport_02:
     type: http
@@ -15,7 +15,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
+    proxy: 🟢 直连
     url: 机场网址
   Airport_03:
     type: http
@@ -24,7 +24,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
+    proxy: 🟢 直连
     url: 机场网址
 
 
@@ -48,14 +48,14 @@ sniffer:
     - "+.apple.com"
 
 proxies:
-- name: "🎯 全球直连"
+- name: "🟢 直连"
   type: direct
   udp: true
 
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🐸 手动切换, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🎯 全球直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🐸 手动切换, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🟢 直连]}
 
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🐸 手动切换, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🎯 全球直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🐸 手动切换, 🇭🇰 香港自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动, 🟢 直连]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🐸 手动切换, type: select, include-all: true, filter: "^((?!(直连)).)*$"}
   - {name: 🇭🇰 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(香港|港|🇭🇰|(?i)hk|(?i)hong))"}
@@ -64,14 +64,14 @@ proxy-groups:
   - {name: 🇺🇲 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美国|美|凤凰城|🇺🇲|(?i)us|(?i)states|(?i)america))"}
   - {name: 🤖 ChatGPT, type: select, proxies: [🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动]}
   - {name: 🎵 TikTok, type: select, proxies: [🇯🇵 日本自动, 🇰🇷 韩国自动, 🇺🇲 美国自动]}
-  - {name: 🪟 Microsoft, type: select, proxies: [🇺🇲 美国自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🎯 全球直连]}
-  - {name: 🍏 Apple, type: select, proxies: [🎯 全球直连, 🚀 节点选择]}
-  - {name: 🐠 漏网之鱼, type: select, proxies: [🎯 全球直连, 🚀 节点选择]} 
+  - {name: 🪟 Microsoft, type: select, proxies: [🇺🇲 美国自动, 🇯🇵 日本自动, 🇰🇷 韩国自动, 🟢 直连]}
+  - {name: 🍏 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
+  - {name: 🐠 漏网之鱼, type: select, proxies: [🟢 直连, 🚀 节点选择]} 
 
  
 rules:
-  - RULE-SET,private_domain,🎯 全球直连
-  - RULE-SET,my-direct,🎯 全球直连
+  - RULE-SET,private_domain,🟢 直连
+  - RULE-SET,my-direct,🟢 直连
   - RULE-SET,my-proxy,🚀 节点选择
   - RULE-SET,my-ai,🤖 ChatGPT  
   - RULE-SET,openai_domain,🤖 ChatGPT
@@ -83,10 +83,10 @@ rules:
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,apple_domain,🍏 Apple    
   - RULE-SET,geolocation-!cn,🚀 节点选择
-  - RULE-SET,cn_domain,🎯 全球直连  
+  - RULE-SET,cn_domain,🟢 直连  
   - RULE-SET,google_ip,🚀 节点选择,no-resolve
   - RULE-SET,telegram_ip,🚀 节点选择,no-resolve
-  - RULE-SET,cn_ip,🎯 全球直连
+  - RULE-SET,cn_ip,🟢 直连
   - MATCH,🐠 漏网之鱼
 
 rule-anchor:
