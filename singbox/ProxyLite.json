@@ -2,20 +2,10 @@
   "version": 1,
   "rules": [
     {
-      "domain": [
-        "qichiyu.com"
-      ]
-    },
-    {
       "domain_suffix": [
         "qichiyu.com",
         "xqc.best",
         "v2rayssr.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "1e100"
       ]
     },
     {
