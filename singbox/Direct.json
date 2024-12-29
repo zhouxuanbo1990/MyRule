@@ -1,21 +1,10 @@
 {
   "version": 1,
-  "rules": [
-    {
-      "domain": [
-        "time.windows.com"
-      ]
-    },
+  "rules": [   
     {
       "domain_suffix": [
         "jianfast.com",
         "tiantianjiexi.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "Placeholder1",
-        "Placeholder2"
       ]
     }
   ]
