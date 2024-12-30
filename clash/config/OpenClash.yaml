@@ -1,4 +1,3 @@
-#机场订阅
 proxy-providers:
   Airport_01:
     type: http
@@ -8,7 +7,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: 机场订阅
+    url: 机场链接
   Airport_02:
     type: http
     interval: 1800
@@ -17,7 +16,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: 机场订阅
+    url: 机场链接
   Airport_03:
     type: http
     interval: 1800
@@ -26,8 +25,8 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: 机场订阅
-global-ua: clash.meta  
+    url: 机场链接
+global-ua: clash.meta
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -46,6 +45,12 @@ geox-url:
   geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
   mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
   asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+
+external-controller: 0.0.0.0:9090
+secret: '12345'
+external-ui: "/usr/share/openclash/ui/zboard"
+external-ui-url: https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip
+
 find-process-mode: strict
 global-client-fingerprint: chrome
 keep-alive-idle: 600
@@ -154,7 +159,7 @@ rule-providers:
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   my-direct: {!!merge <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/Direct.list" }
   my-proxy: {!!merge <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/ProxyLite.list" }
-  my-ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/AI.list" }  
+  my-ai: {!!merge <<: *class, url: "https://raw.githubusercontent.com/zhouxuanbo1990/MyRule/refs/heads/main/clash/AI.list" }
   openai_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs" }  
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
