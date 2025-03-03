@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "rules": [   
+  "rules": [
     {
       "domain_suffix": [
         "jianfast.com",
@@ -10,7 +10,10 @@
         "douyinvod.com",
         "douyinstatic.com",
         "kuaishou.com",
-        "kuaishouzt.cn"
+        "kuaishouzt.cn",
+        "yximgs.com",
+        "kwimgs.com",
+        "kwaicdn.com"
       ]
     }
   ]
