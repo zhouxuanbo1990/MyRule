@@ -7,6 +7,9 @@ DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,ruanjianku.cloud
 DOMAIN-SUFFIX,capcut.com
 DOMAIN-SUFFIX,wootechy.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 # 国外DNS
