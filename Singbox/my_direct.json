@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "time.windows.com",
+        "xn--ngstr-lra8j.com",
+        "jianfast.com",
+        "tiantianjiexi.com"
+      ]
+    }
+  ]
+}

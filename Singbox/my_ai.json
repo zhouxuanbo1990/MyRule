@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "coze.com",
+        "cici.com",
+        "ciciai.com",
+        "ciciaicdn.com",
+        "gemini.google.com",
+        "grok.com",
+        "trae.ai",
+        "heygen.com",
+        "rask.ai",
+        "maestra.ai",
+        "cursor.com",
+        "cursor.sh",
+        "cursorapi.com",
+        "cursor-cdn.com",
+        "znsv.baidu.com",
+        "zz.bdstatic.com",
+        "zzy1.quyaoya.com"
+      ]
+    }
+  ]
+}

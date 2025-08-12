@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "qichiyu.com",
+        "ytlarge.com",
+        "bulianglin.com",
+        "ruanjianku.cloud",
+        "wootechy.com",
+        "capcut.com",
+        "ipify.org"
+      ]
+    }
+  ]
+}
+
