@@ -36,7 +36,7 @@
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
-      {"clash_mode": "direct", "outbound": "🎯 全球直连"},
+      {"clash_mode": "direct", "outbound": "🎯 全球直连"}，
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"rule_set": "my-direct", "outbound": "🎯 全球直连"},
       {"rule_set": "my-ai", "outbound": "🧠 AI"},
@@ -128,7 +128,7 @@
       "store_fakeip": false
     },
     "clash_api": {
-      "external_controller": "0.0.0.0:9095",
+      "external_controller": "0.0.0.0:9090",
       "external_ui": "/etc/momo/run/ui",
       "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🎯 全球直连",
