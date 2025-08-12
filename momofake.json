@@ -10,7 +10,7 @@
       {"query_type": "HTTPS", "action": "reject"},
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
+      {"rule_set": ["geosite-cn", "geosite-apple"], "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
@@ -67,8 +67,8 @@
       {"tag": "geosite-!cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-google", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs", "download_detour": "🎯 全球直连"},
-      {"tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "🎯 全球直连"}
     ],
     "final": "🐠 漏网之鱼",
@@ -82,17 +82,17 @@
       "listen_port": 1053
     },
     {
-      "tag": "http-in",
-      "type": "http",
+      "tag": "http-in"，
+      "type": "http"，
       "listen": "::",
       "listen_port": 8080
     },
     {
-      "tag": "socks-in",
-      "type": "socks",
-      "listen": "::",
+      "tag": "socks-in"，
+      "type": "socks"，
+      "listen": "::"，
       "listen_port": 1080
-    },
+    }，
     {
       "tag": "redirect-in",
       "type": "redirect",
@@ -100,19 +100,19 @@
       "listen_port": 7890
     },
     {
-      "tag": "tproxy-in",
-      "type": "tproxy",
-      "listen": "::",
+      "tag": "tproxy-in"，
+      "type": "tproxy"，
+      "listen": "::"，
       "listen_port": 7891
     },
     {
-      "tag": "tun-in",
-      "type": "tun",
-      "interface_name": "momo",
+      "tag": "tun-in"，
+      "type": "tun"，
+      "interface_name": "momo"，
       "address": [
         "172.31.0.1/30",
         "fdfe:dcba:9876::1/126"
-      ],
+      ]，
       "auto_route": false,
       "auto_redirect": false
     }
