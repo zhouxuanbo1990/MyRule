@@ -3,13 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
-        "coze.com",
-        "cici.com",
-        "ciciai.com",
-        "ciciaicdn.com",
-        "gemini.google.com",
-        "grok.com",
-        "trae.ai"
+       
       ]
     }
   ]
