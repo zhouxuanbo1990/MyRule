@@ -1,0 +1,18 @@
+# 直连补充列表(国内域名不解析时，防止走代理使用)
+# 域名后缀匹配
+DOMAIN-SUFFIX,time.windows.com
+DOMAIN-SUFFIX,jianfast.com
+DOMAIN-SUFFIX,tiantianjiexi.com
+DOMAIN-SUFFIX,wsbkwai.com
+DOMAIN-SUFFIX,wskwai.com
+DOMAIN-SUFFIX,zijieapi.com,
+DOMAIN-SUFFIX,byteing.com,
+DOMAIN-SUFFIX,ndcmgs.com,
+DOMAIN-SUFFIX,ndcimgs.com,
+DOMAIN-SUFFIX,bytetos.com,
+DOMAIN-SUFFIX,bytescm.com,
+DOMAIN-SUFFIX,ibytedapm.com,
+DOMAIN-SUFFIX,bytedance.com,
+DOMAIN-SUFFIX,byteoversea.com,
+DOMAIN-SUFFIX,yhgfb-cn-static.com,
+DOMAIN-SUFFIX,bytegoofy.com

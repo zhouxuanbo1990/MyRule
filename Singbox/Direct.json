@@ -1,0 +1,25 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "time.windows.com",
+        "jianfast.com",
+        "tiantianjiexi.com",
+        "wsbkwai.com",
+        "wskwai.com",
+        "zijieapi.com",
+        "byteing.com",
+        "ndcmgs.com",
+        "ndcimgs.com",
+        "bytetos.com",
+        "bytescm.com",
+        "ibytedapm.com",
+        "bytedance.com",
+        "byteoversea.com",
+        "yhgfb-cn-static.com",
+        "bytegoofy.com"
+      ]
+    }
+  ]
+}
