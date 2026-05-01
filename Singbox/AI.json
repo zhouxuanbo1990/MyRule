@@ -4,7 +4,12 @@
     {
       "domain_suffix": [
         "capcut.com",
-        "capcutapi.com"
+        "capcutapi.com",
+        "aistudio.google.com",
+        "waa-pa.clients6.google.com",
+        "claude.ai",
+        "claude.com",
+        "anthropic.com"
       ]
     }
   ]
